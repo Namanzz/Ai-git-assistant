@@ -67,6 +67,7 @@ def get_ai_code_review(code_diff: str) -> str:
 
 def main():
     """Main function executed by the GitHub Action."""
+    # This is a SECOND test comment to trigger the workflow again.
     # This is a test comment for our pull request.
     repo_name = os.getenv("GITHUB_REPOSITORY")
     event_path = os.getenv("GITHUB_EVENT_PATH")
