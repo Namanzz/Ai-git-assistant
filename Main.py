@@ -65,9 +65,9 @@ def get_ai_code_review(code_diff: str) -> str:
         print(f"ERROR: Could not get AI review: {e}")
         return f"Error: Could not get AI review. Details: {e}"
 
-
 def main():
     """Main function executed by the GitHub Action."""
+    # This is a test comment for our pull request.
     repo_name = os.getenv("GITHUB_REPOSITORY")
     event_path = os.getenv("GITHUB_EVENT_PATH")
 
